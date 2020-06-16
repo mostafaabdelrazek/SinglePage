@@ -1,0 +1,303 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    
+}
+html,body{
+    height: 100%;
+    margin: 0;
+}
+.header{
+    height: 100%;
+    background: url('s.jpg') black;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    background-position-x: right;
+    background-position-y: 30%;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background: #00000029
+    
+}
+.navbar ul a{
+    text-decoration: none;
+    color: #000;
+}
+.navbar ul li{
+    background: ;
+   padding: 15px;
+    color: #fff;
+    transition: 0.5s;
+}
+.navbar ul li:hover{
+    color: #080808;
+    font-size: 18px;
+    padding: 12px;
+}
+.navbar ul  img{
+    padding: auto;
+    width: 47px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.intro{
+    height: 85%;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    
+    position:relative;
+}
+/*.intro::before{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    bottom: 5;
+    right: 20%;
+    
+    border-top: 30px solid transparent;
+    border-right : 600px solid transparent;
+    border-bottom: 450px solid #ffffff45;
+}
+*/
+.intro p{
+    font-size: 50px;
+
+}
+.intro span{
+    padding-top: 40px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 35%;
+}
+
+#about h2{
+    text-align: center;
+    margin-top: 30px;
+
+}
+.section-controlller{
+      display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    min-height: 550px;
+}
+.about-sections{
+    width: 320px;
+    height: 390px;
+    background:white;
+    padding:5px;
+    box-shadow: 0.5px 1.5px 10px 0px;
+    border-radius: 4px;
+}
+
+#p1{
+        background: url("matro7.jpg");
+        background-size:cover;
+    background-position:center;
+}
+#p2{
+        background: url("algy1.jpg");
+        background-size:cover;
+    background-position:center;
+}
+#p3{
+        background: url("scoutboy.jpg");
+        background-size:cover;
+}
+.about-sections .img{
+    width: 100%;
+    height: 150px;
+}
+
+.about-sections h3{
+    padding: 10px;
+    text-align: center;
+}
+.about-sections p{
+    text-align: left;
+}
+#dcv{
+    min-height: 300px;
+    background: url("n.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-x:;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.cvb{
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 24px;
+    border:none;
+    color: #00000090;
+    border-radius: 4px;
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+    margin: 0px 20px;
+    font-family: Arial;
+}
+
+
+.cvb span{
+    position: relative;
+    transition: 0.5s;
+}
+.cvb span::after{
+    content: '\00bb';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.cvb:hover span{
+    padding-right: 25px;
+    color: #000000;
+}
+.cvb:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+#dcv p{
+    font-size: 24px;
+    font-family: Arial;
+    color:#fff;
+}
+#dnt{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#dnt h4{
+    font-size: 30px;
+}
+#dnt p{
+    padding: 45px 100px;
+}
+footer{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    background: url('f.jpg');
+       background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    background-position-x: right;
+    background-position-y: 55%;
+    
+    
+}
+
+footer #contact{
+    width: 55%;
+    min-height: 400px;
+    margin:20px 60px;
+    margin-bottom: 100px;
+    background: #00000042;
+    border-radius: 5px;
+    
+}
+#contact h4{
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+#contact p{
+    padding: 0px 10px;
+    font-family: arial;
+}
+footer #contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+}
+#contact form textarea{
+    border:none;
+    width: 100%;
+    min-width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+form label{
+    padding: 5px 15px;
+    font-family: arial;
+}
+form div{
+    margin: 10px;
+    text-align:left;
+}
+form div input{
+    
+    width: 30%;
+    height: 30px;
+    border:none;
+    border-radius: 5px;
+}
+form div label{
+    padding: 0px;
+    margin: 0px;
+    padding: 0px 10px;
+}
+form .btn{
+    width: 100px;
+    align-self: end;
+    height: 30px;
+    border: none;
+    cursor:pointer;
+    font-size: 16px;
+    background: #4c4747;
+    color:whitesmoke;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: whitesmoke;
+    color: #000;
+}
+footer .icons{
+    height: 100%;
+    width: 40%;
+    background: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+footer .icons h4{
+    align-self: ;
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+}
+
+footer .icons div img{
+    margin: 0px 10px;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
